@@ -7,7 +7,7 @@ SimpleTaskr is a lightweight and intuitive task manager built with **Vue.js**. I
 - **Add Tasks**: Quickly create new tasks with titles, due dates, and descriptions.
 - **Set Due Dates**: Keep track of deadlines with optional due dates.
 - **Mark as Completed**: Mark tasks as done and track your progress.
-- **Customizable Colors**: Choose colors for your tasks to categorize or prioritize them.
+- **Customizable Time Colors**: Choose colors for your time for display purposes
 - **Image Uploads**: Attach images to tasks for better context (default image provided if none is uploaded).
 - **Responsive Design**: Works seamlessly on desktop and mobile devices.
 
