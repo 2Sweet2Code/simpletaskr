@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SimpleTaskr" />
+    <!-- Manifest File -->
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SimpleTaskr is a lightweight and intuitive task manager built with Vue.js. Organize your daily tasks effortlessly.">
+    <meta name="keywords" content="task manager, to-do list, productivity, vue.js, simple task app">
+    <meta name="author" content="ByteMash">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="SimpleTaskr - Effortless Task Management">
+    <meta property="og:description" content="A simple and intuitive task manager built with Vue.js. Perfect for organizing your daily tasks.">
+    <meta property="og:image" content="https://2sweet2code.github.io/simpletaskr/assets/facebook.png">
+    <meta property="og:url" content="https://2sweet2code.github.io/simpletaskr">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SimpleTaskr - Effortless Task Management">
+    <meta name="twitter:description" content="A simple and intuitive task manager built with Vue.js. Perfect for organizing your daily tasks.">
+    <meta name="twitter:image" content="https://2sweet2code.github.io/simpletaskr/assets/twitter.png">
+    <title>SimpleTaskr - Effortless Task Management</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but SimpleTaskr doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <h1>SimpleTaskr</h1>
+      <input type="text" v-model="newTask" placeholder="Add a new task" @keyup.enter="addTask" />
+      <button @click="addTask">Add Task</button>
+      <ul>
+        <li v-for="(task, index) in tasks" :key="index">
+          {{ task }}
+          <button @click="removeTask(index)">Remove</button>
+        </li>
+      </ul>
+    </div>
+    <!-- Link to JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
